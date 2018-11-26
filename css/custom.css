@@ -1,33 +1,33 @@
-body{
-    background-color: #23f0c7;
-    color: #fff;
-    font-size: 20px
+body {
+  background-color: #23f0c7;
+  color: #fff;
+  font-size: 18px
 }
 
-img{
-    max-width: 100%
+img {
+  max-width: 100%
 }
 
-nav{
-	background-color: #7d7abc;
+nav {
+  background-color: #7d7abc;
 }
 
-h1, h2, h3{
-	font-family: 'Righteous', cursive;
+h1, h2, h3 {
+  font-family: 'Righteous', cursive;
 }
 
-h1{
-	text-transform: uppercase;
+h1 {
+  text-transform: uppercase;
 }
 
-a{
-	color: #7d7abc;
-	text-decoration: underline;
-	text-decoration-style: dashed;
+a {
+  color: #7d7abc;
+  text-decoration: underline;
+  text-decoration-style: dashed;
 }
 
-a:hover{
-	color: #7d7abc
+a:hover {
+  color: #7d7abc
 }
 
 /*
@@ -35,17 +35,16 @@ a:hover{
 ROCK PAPER SCISSORS BUTTONS
 **********************************
 */
-
-input{
-    max-width: 100px
+input {
+  max-width: 50px
 }
 
-input+input{
-	margin-left: 30px
+input+input {
+  margin-left: 20px
 }
 
-#scissors{
-	max-width: 75px;
+#scissors {
+  max-width: 40px;
 }
 
 /*
@@ -53,17 +52,17 @@ input+input{
 CURRENT MOVES
 **********************************
 */
-.current-move p{
-	width: 120px;
-    text-align: center;
+.current-move p {
+  width: 120px;
+  text-align: center;
 }
 
-.you{
-	background-color: #1dc5a3
+.you {
+  background-color: #1dc5a3
 }
 
-.machine{
-	background-color: #1aaf91
+.machine {
+  background-color: #1aaf91
 }
 
 /*
@@ -71,15 +70,26 @@ CURRENT MOVES
 RESULTS
 **********************************
 */
-.results-container{
-	background-color: #ef767a
+.results-container {
+  background-color: #ef767a
 }
 
-.results-counter p{
-	width: 120px;
-    text-align: center;
+.results-counter p {
+  width: 120px;
+  text-align: center;
 }
 
-.rules-container{
-	background-color: #1dc5a3
+.rules-container {
+  background-color: #1dc5a3
+}
+
+/*
+**********************************
+MEDIA QUERY
+**********************************
+*/
+@media screen and (min-width: 600px) {
+  input {
+    max-width: 100px
+  }
 }
