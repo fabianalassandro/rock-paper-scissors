@@ -1,0 +1,87 @@
+body{
+    background-color: #23f0c7;
+    color: #fff;
+    font-size: 20px
+}
+
+img{
+    max-width: 100%
+}
+
+nav{
+	background-color: #7d7abc;
+}
+
+h1, h2, h3{
+	/* font-family: 'Sedgwick Ave Display', cursive;*/
+	font-family: 'Righteous', cursive;
+}
+
+h1{
+	text-transform: uppercase;
+}
+
+a{
+	color: #7d7abc;
+	text-decoration: underline;
+	text-decoration-style: dashed;	
+}
+
+a:hover{
+	color: #7d7abc
+}
+
+/* 
+**********************************
+ROCK PAPER SCISSORS BUTTONS
+**********************************
+*/
+
+input{
+    max-width: 100px
+}
+
+input+input{
+	margin-left: 30px
+}
+
+#scissors{
+	max-width: 75px;
+}
+
+/* 
+**********************************
+CURRENT MOVES
+**********************************
+*/
+.current-move p{
+	width: 120px;
+    text-align: center;
+}
+
+.you{
+	background-color: #1dc5a3
+}
+
+.machine{
+	background-color: #1aaf91	
+}
+
+/* 
+**********************************
+RESULTS
+**********************************
+*/
+.results-container{
+	background-color: #ef767a
+}
+
+.results-counter p{
+	width: 120px;
+    text-align: center;
+}
+
+.rules-container{
+	background-color: #1dc5a3
+}
+

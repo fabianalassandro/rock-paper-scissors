@@ -1,0 +1,104 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en-GB">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Rock, Paper, Scissors</title>
+		<link href="https://fonts.googleapis.com/css?family=Sedgwick+Ave+Display" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Righteous|Sedgwick+Ave+Display" rel="stylesheet">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top mb-5 pt-3 pb-3">
+	  <a class="navbar-brand" href="index.html">RPS</a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html"> Play! <span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#how-to-play">How to play</a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#credits">Credits</a>
+	      </li>
+	  </div>
+	</nav>
+
+	<div id="wrapper">
+
+	<section class="mt-5 container w-50 pt-3">
+		<h1 class="text-center mt-5 pt-5">Rock | Paper | Scissors</h1>
+
+	<div class="text-center mt-5">
+		<input id="rock" value="rock" type="image" src="images/rock.png"></input>
+		<input id="paper" value="paper" type="image" src="images/paper.png" alt="Raised Hand emoji."></input>
+		<input id="scissors" value="scissors" type="image" src="images/scissors.png" alt="Victory Hand emoji."></input>
+	</div>
+	</section>
+
+
+		<section class="current-move container w-50 mt-5">
+			<h2 class="text-center mb-3">Current move</h2>
+
+			<div class="d-flex flex-row justify-content-center">
+				<div class="you">
+					<p>You:</p>
+					<p id="play_you"></p>
+				</div>
+
+				<div class="machine">
+					<p>Machine:</p>
+					<p id="play_machine"> </p>
+				</div>
+			</div>
+		</section>
+
+
+		<section class="results-container p-3 mt-5">
+			<h2 class="text-center mb-4">Result</h2>
+			<h3 class="text-center">Verdict: <span id="verdict">0</span></h3>
+			<div class="d-flex flex-row justify-content-center results-counter">
+				<p>Won: <span id="game_won">0</span></p>
+				<p>Lost: <span id="game_lost">0</span> </p>
+				<p>Draw: <span id="game_draw">0</span></p>
+				<p>Played: <span id="game_played">0</span></p>
+			</div>
+		</section>
+
+		<section id="how-to-play" class="rules-container pt-5">
+			<div class="container w-50 p-2">
+			<h2 class="text-center mb-4">How to play</h2>
+			<h3>Rulezzzz</h3>
+			<ul>
+				<li>Rock crushes scissors</li>
+				<li>Scissors cuts paper</li>
+				<li>Paper covers rock</li>
+			</ul>
+			<p>Click on one of three button: rock, paper or scissors and try to beat the machine!</p>
+			<p>Good luck!</p>
+			</div>
+		</section>
+
+		<section id="credits" class="text-center mt-5">
+			<h2>Credits</h2>
+			<p>Vaguely inspired by the cool design of <a href="https://www.rock-paper-scissors-game.com/">rock-paper-scissors-game.com</a></p>
+		</section>
+
+
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js/engine.js"></script>
+
+</div>
+</body>
+
+</html>
